@@ -1,0 +1,20 @@
+﻿<Window x:Class="FIGHT_TEST_ANIMA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FIGHT_TEST_ANIMA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="334*"/>
+            <RowDefinition Height="85*"/>
+        </Grid.RowDefinitions>
+        <Label Content="KAMPFSYSTEM_TESTER" HorizontalAlignment="Left" Height="74" Margin="147,74,0,0" VerticalAlignment="Top" Width="438" FontSize="36"/>
+        <Button x:Name="FIGHT_BUTTON" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="216,243,0,0" VerticalAlignment="Top" Width="306" Click="FIGHT_BUTTON_Click"/>
+        <TextBox x:Name="FIGHT_TEXT" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="453" Margin="147,189,0,0" FontSize="16"/>
+        <TextBox x:Name="RVSHOW" HorizontalAlignment="Left" Height="23" Margin="49,6.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+
+    </Grid>
+</Window>

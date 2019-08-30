@@ -21,13 +21,13 @@ namespace FIGHT_TEST_ANIMA
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {    
+        {
 
         }
 
         private void FIGHT_BUTTON_Click(object sender, RoutedEventArgs e)
         {
-             {
+            {
                 int playerStrenght = 8;
                 int weaponPower = 8;
                 int playerHealth = 50;
@@ -37,7 +37,7 @@ namespace FIGHT_TEST_ANIMA
                 Random randownValue = new Random();
                 int rV = randownValue.Next(1, 250);
                 int acVV = randownValue.Next(0, 1);
-                int accuracy = rV + 10; 
+                int accuracy = rV + 10; //If frägt nur nach RV bitte beheben yay
                 if (acVV == 1)
                 {
                     rV = accuracy;
@@ -47,6 +47,7 @@ namespace FIGHT_TEST_ANIMA
                     accuracy = Damage;
                 }
 
+                
                 this.RVSHOW.Text = Convert.ToString(rV);
                 if (rV < 51)
                 {
