@@ -20,34 +20,37 @@ namespace FIGHT_TEST_ANIMA
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int health = 50;
         public MainWindow()
         {
-
+           
         }
 
         private void FIGHT_BUTTON_Click(object sender, RoutedEventArgs e)
         {
+          
+               
             {
                 int playerStrenght = 8;
                 int weaponPower = 8;
-                int playerHealth = 50;
                 int maxPower = playerStrenght + weaponPower;
+                int superPower = 18;
                 int minPower = weaponPower;
                 int Damage = 0;
                 Random randownValue = new Random();
-                int rV = randownValue.Next(1, 250);
-                int acVV = randownValue.Next(0, 1);
-                int accuracy = rV + 10; //If frägt nur nach RV bitte beheben yay
-                if (acVV == 1)
+                int rV = randownValue.Next(1, 256);
+                int acVV = randownValue.Next(0, 1); //bool?
+                int accuracy = rV;
+                if (acVV == 0)
                 {
-                    rV = accuracy;
+                    accuracy = rV + 10;              
                 }
                 else
                 {
-                    accuracy = Damage;
+                    accuracy = rV - 10;
                 }
 
-                
+
                 this.RVSHOW.Text = Convert.ToString(rV);
                 if (rV < 51)
                 {
@@ -57,8 +60,8 @@ namespace FIGHT_TEST_ANIMA
                 else  if (rV < 100)
 
                 {
-                    Damage = 8;
-                    this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
+                    Damage = minPower;
+                    this.FIGHT_TEXT.Text = "Du machst " + minPower + " Punkte Schaden!";
                 }
                 if (rV >= 101 && rV < 150)
                 {
@@ -70,21 +73,29 @@ namespace FIGHT_TEST_ANIMA
                     Damage = 12;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
                 }
-                if (rV >= 201 && rV < 225)
+                if (rV >= 200 && rV < 225)
                 {
                     Damage = 14;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
 
                 }
-                if (rV >= 226 && rV < 250)
+                if (rV >= 225 && rV < 256)
                 {
-                     Damage = 16;
-                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
+                     Damage = maxPower;
+                     this.FIGHT_TEXT.Text = "Du machst " + maxPower + " Punkte Schaden!";
                 }
-                if (rV > 250)
+                if (rV >= 256)
                 {
-                    Damage = 16;
-                    this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden! Das ist ein Volltreffer!";
+                    Damage = superPower;
+                    this.FIGHT_TEXT.Text = "Du machst " + superPower + " Punkte Schaden! Das ist ein Volltreffer!";
+
+                }
+
+                this.health = health - Damage;
+                this.HPBOX.Text = "Du hast noch " + health + " Leben";  
+                if (health <= 0)
+                {
+                    this.HPBOX.Text = "YOU WON";
                 }
             }
         }
