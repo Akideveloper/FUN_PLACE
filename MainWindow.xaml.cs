@@ -41,6 +41,7 @@ namespace FIGHT_TEST_ANIMA
                 int rV = randownValue.Next(1, 256);
                 int acVV = randownValue.Next(0, 1); //bool?
                 int accuracy = rV;
+                int enemyVer = int.Parse(enemyVERB.Text);
                 if (acVV == 0)
                 {
                     accuracy = rV + 10;              
@@ -58,22 +59,22 @@ namespace FIGHT_TEST_ANIMA
                 else  if (rV < 100)
 
                 {
-                    Damage = minPower;
-                    this.FIGHT_TEXT.Text = "Du machst " + minPower + " Punkte Schaden!";
+                    Damage = minPower-enemyVer;
+                    this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
                 }
                 if (rV >= 101 && rV < 150)
                 {
-                    Damage = minPower +2;
+                    Damage = minPower +2  - enemyVer;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
                 }
                 if (rV >= 151 && rV < 200)
                 {
-                    Damage = minPower +4;
+                    Damage = minPower +4- enemyVer;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
                 }
                 if (rV >= 200 && rV < 225)
                 {
-                    Damage = minPower +6;
+                    Damage = minPower +6 -enemyVer;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
 
                 }
@@ -90,7 +91,7 @@ namespace FIGHT_TEST_ANIMA
                 }
 
                 this.health = health - Damage;
-                this.HPBOX.Text = "Du hast noch " + health + " Leben";  
+                this.HPBOX.Text = "Der Gegner hat noch " + health + " Leben";  
                 if (health <= 0)
                 {
                     this.HPBOX.Text = "Der Gegner wurde besiegt!";
