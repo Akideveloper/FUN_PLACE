@@ -31,10 +31,10 @@ namespace FIGHT_TEST_ANIMA
           
                
             {
-                int playerStrenght = 8;
-                int weaponPower = 8;
+                int playerStrenght = int.Parse(playerstr.Text);
+                int weaponPower = int.Parse(weaponpw.Text);
                 int maxPower = playerStrenght + weaponPower;
-                int superPower = 18;
+                int superPower = weaponPower + playerStrenght + 2;
                 int minPower = weaponPower;
                 int Damage = 0;
                 Random randownValue = new Random();
@@ -49,12 +49,10 @@ namespace FIGHT_TEST_ANIMA
                 {
                     accuracy = rV - 10;
                 }
-
-
                 this.RVSHOW.Text = Convert.ToString(rV);
                 if (rV < 51)
                 {
-                    Damage = 0;
+                    Damage = rV/rV-1;
                     this.FIGHT_TEXT.Text = "DANEBEN EY!";
                 }
                 else  if (rV < 100)
@@ -65,17 +63,17 @@ namespace FIGHT_TEST_ANIMA
                 }
                 if (rV >= 101 && rV < 150)
                 {
-                    Damage = 10;
+                    Damage = minPower +2;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
                 }
                 if (rV >= 151 && rV < 200)
                 {
-                    Damage = 12;
+                    Damage = minPower +4;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
                 }
                 if (rV >= 200 && rV < 225)
                 {
-                    Damage = 14;
+                    Damage = minPower +6;
                     this.FIGHT_TEXT.Text = "Du machst " + Damage + " Punkte Schaden!";
 
                 }
@@ -95,9 +93,11 @@ namespace FIGHT_TEST_ANIMA
                 this.HPBOX.Text = "Du hast noch " + health + " Leben";  
                 if (health <= 0)
                 {
-                    this.HPBOX.Text = "YOU WON";
+                    this.HPBOX.Text = "Der Gegner wurde besiegt!";
                 }
             }
         }
+
+   
     }
 }

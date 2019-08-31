@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FIGHT_TEST_ANIMA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="933.651">
+        Title="Kampfsystemtester" Height="450" Width="933.651">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="334*"/>
@@ -14,8 +14,13 @@
         <Label Content="KAMPFSYSTEM_TESTER" HorizontalAlignment="Left" Height="74" Margin="284,98,0,0" VerticalAlignment="Top" Width="438" FontSize="36"/>
         <Button x:Name="FIGHT_BUTTON" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="319,247,0,0" VerticalAlignment="Top" Width="306" Click="FIGHT_BUTTON_Click"/>
         <TextBox x:Name="FIGHT_TEXT" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="453" Margin="253,191,0,0" FontSize="16"/>
-        <TextBox x:Name="RVSHOW" HorizontalAlignment="Left" Height="23" Margin="766,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="HPBOX" HorizontalAlignment="Left" Height="23" Margin="728,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <TextBox x:Name="RVSHOW" HorizontalAlignment="Left" Height="23" Margin="786,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <TextBox x:Name="HPBOX" HorizontalAlignment="Left" Height="23" Margin="728,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188"/>
+        <TextBox x:Name="playerstr" HorizontalAlignment="Left" Height="32" Margin="34,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center" FontSize="24" Text="8"/>
+        <TextBox x:Name="weaponpw" HorizontalAlignment="Left" Height="32" Margin="34,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.467,2.152" Text="8" FontSize="24" TextAlignment="Center"/>
+        <Label Content="Bitte gib die Stärke der Waffe ein:" HorizontalAlignment="Left" Height="39" Margin="10,226,0,0" VerticalAlignment="Top" Width="191"/>
+        <Label Content="Bitte gib die Stärke des Spielers ein:" HorizontalAlignment="Left" Height="39" Margin="0,70,0,0" VerticalAlignment="Top" Width="201"/>
+        <Label Content="Leben des Gegners:" HorizontalAlignment="Left" Height="39" Margin="725,26,0,0" VerticalAlignment="Top" Width="201"/>
 
     </Grid>
 </Window>
