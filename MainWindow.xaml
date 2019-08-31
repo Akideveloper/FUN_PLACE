@@ -16,7 +16,7 @@
             <RowDefinition Height="85*"/>
         </Grid.RowDefinitions>
         <Label Content="KAMPFSYSTEM_TESTER" HorizontalAlignment="Left" Height="74" Margin="252,98,0,0" VerticalAlignment="Top" Width="438" FontSize="36" Grid.Column="1"/>
-        <Button x:Name="FIGHT_BUTTON" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="287,247,0,0" VerticalAlignment="Top" Width="306" Click="FIGHT_BUTTON_Click" Grid.Column="1"/>
+        <Button x:Name="FIGHT_BUTTON" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="221,248,0,0" VerticalAlignment="Top" Width="232" Click="FIGHT_BUTTON_Click" Grid.Column="1"/>
         <TextBox x:Name="FIGHT_TEXT" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="453" Margin="221,191,0,0" FontSize="16" Grid.Column="1"/>
         <TextBox x:Name="RVSHOW" HorizontalAlignment="Left" Height="23" Margin="754,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" Grid.Column="1"/>
         <TextBox x:Name="HPBOX" HorizontalAlignment="Left" Height="23" Margin="696,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Grid.Column="1"/>
@@ -28,6 +28,8 @@
         <Label Content="Bitte gib die Stärke der Waffe ein:" HorizontalAlignment="Left" Height="39" Margin="10,226,0,0" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
         <TextBox x:Name="enemyVERB" HorizontalAlignment="Left" Height="32" Margin="40,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.467,2.152" Text="1" FontSize="24" TextAlignment="Center" Grid.Column="1"/>
         <Label Content="Bitte gib die Verteidigung des Gegners ein:" HorizontalAlignment="Left" Height="39" Margin="0,154,0,0" VerticalAlignment="Top" Width="236" Grid.ColumnSpan="2"/>
+        <Button x:Name="FIGHT_BUTTON_Copy" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="221,248,0,0" VerticalAlignment="Top" Width="453" Click="FIGHT_BUTTON_Click" Grid.Column="1"/>
+        <CheckBox x:Name="DOPPELSCHLAG" Content="Doppelschlag?" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.265,0.05"/>
 
     </Grid>
 </Window>
