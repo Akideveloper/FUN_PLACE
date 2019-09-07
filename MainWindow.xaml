@@ -15,23 +15,21 @@
             <RowDefinition Height="334*"/>
             <RowDefinition Height="85*"/>
         </Grid.RowDefinitions>
-        <Label Content="KAMPFSYSTEM_TESTER" HorizontalAlignment="Left" Height="74" Margin="252,98,0,0" VerticalAlignment="Top" Width="438" FontSize="36" Grid.Column="1"/>
+        <Label Content="Fight Tester (ver. 0.0.0.7)" HorizontalAlignment="Left" Height="74" Margin="252,98,0,0" VerticalAlignment="Top" Width="438" FontSize="36" Grid.Column="1"/>
         <Button x:Name="FIGHT_BUTTON" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="221,248,0,0" VerticalAlignment="Top" Width="232" Click="FIGHT_BUTTON_Click" Grid.Column="1"/>
         <TextBox x:Name="FIGHT_TEXT" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="453" Margin="221,191,0,0" FontSize="16" Grid.Column="1" IsEnabled="False" Cursor="None"/>
-        <TextBox x:Name="RVSHOW" HorizontalAlignment="Left" Height="23" Margin="754,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="RVSHOW" HorizontalAlignment="Left" Height="23" Margin="740,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" Grid.Column="1"/>
         <TextBox x:Name="HPBOX" HorizontalAlignment="Left" Height="63" Margin="693,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Grid.Column="1"/>
-        <TextBox x:Name="playerstr" HorizontalAlignment="Left" Height="32" Margin="10,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center" FontSize="24" Text="8" Grid.Column="1"/>
-        <TextBox x:Name="weaponpw" HorizontalAlignment="Left" Height="32" Margin="10,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.467,2.152" Text="8" FontSize="24" TextAlignment="Center" Grid.Column="1"/>
-        <Label Content="Bitte gib die Stärke der Waffe ein:" HorizontalAlignment="Left" Height="39" Margin="10,226,0,0" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
-        <Label Content="Bitte gib die Stärke des Spielers ein:" HorizontalAlignment="Left" Height="39" Margin="0,70,0,0" VerticalAlignment="Top" Width="201" Grid.ColumnSpan="2"/>
-        <Label Content="Leben des Gegners:" HorizontalAlignment="Left" Height="39" Margin="693,26,0,0" VerticalAlignment="Top" Width="201" Grid.Column="1"/>
+        <TextBox x:Name="playerStr" HorizontalAlignment="Left" Height="32" Margin="10,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center" FontSize="24" Text="8" Grid.Column="1"/>
+        <TextBox x:Name="weaponPw" HorizontalAlignment="Left" Height="32" Margin="10,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.467,2.152" Text="8" FontSize="24" TextAlignment="Center" Grid.Column="1"/>
+        <Label Content="How strong is your Weapon?" HorizontalAlignment="Left" Height="39" Margin="10,226,0,0" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
+        <Label Content="How strong is your character?" HorizontalAlignment="Left" Height="39" Margin="0,70,0,0" VerticalAlignment="Top" Width="201" Grid.ColumnSpan="2"/>
+        <Label Content="Life of your Enemy?" HorizontalAlignment="Left" Height="39" Margin="693,26,0,0" VerticalAlignment="Top" Width="201" Grid.Column="1"/>
         <TextBox x:Name="enemyVERB" HorizontalAlignment="Left" Height="32" Margin="10,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.467,2.152" Text="1" FontSize="24" TextAlignment="Center" Grid.Column="1"/>
-        <Label Content="Bitte gib die Verteidigung des Gegners ein:" HorizontalAlignment="Left" Height="39" Margin="10,151,0,0" VerticalAlignment="Top" Width="236" Grid.ColumnSpan="2"/>
+        <Label Content="How high is the Defence of the Enemy?" HorizontalAlignment="Left" Height="39" Margin="0,154,0,0" VerticalAlignment="Top" Width="236" Grid.ColumnSpan="2" RenderTransformOrigin="0.013,0.59"/>
         <Button x:Name="FIGHT_BUTTON_Copy" Content="FIGHT!" HorizontalAlignment="Left" Height="65" Margin="221,248,0,0" VerticalAlignment="Top" Width="453" Click="FIGHT_BUTTON_Click" Grid.Column="1"/>
-        <CheckBox x:Name="DOPPELSCHLAG" Content="Doppelschlag?" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.265,0.05"/>
-        <CheckBox x:Name="EFFECTIV" Content="Ist die Attacke effektiv?" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="0,32,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.265,0.05"/>
-        <Label Content="Wie viel Erfahrung willst du bekommen?" HorizontalAlignment="Left" Height="39" Margin="648,133,0,0" VerticalAlignment="Top" Width="236" Grid.Column="1"/>
-        <TextBox x:Name="EXP" HorizontalAlignment="Left" Height="32" Margin="740,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.467,2.152" Text="1" FontSize="24" TextAlignment="Center" Grid.Column="1"/>
+        <CheckBox x:Name="doublePunch" Content="Double Punch?" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.265,0.05"/>
+        <CheckBox x:Name="EFFECTIV" Content="Is your Attack effectiv?" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="0,32,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.265,0.05" IsChecked="True" IsThreeState="True"/>
 
     </Grid>
 </Window>
